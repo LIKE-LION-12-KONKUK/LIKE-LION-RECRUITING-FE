@@ -32,7 +32,7 @@ function Home() {
   // API 호출 함수를 useEffect 외부로 이동
   const fetchProjects = async () => {
     try {
-      const response = await axios.get('http://34.64.82.240:8080/random/11/');
+      const response = await axios.get(process.env.BAKCEND_HOST + '/random/11/');
       setProjects(response.data);
     } catch (error) {
       console.error('Error fetching projects: ', error);
@@ -42,14 +42,14 @@ function Home() {
   const fetchSectionImage = async (navItem) => {
     if (navItem.href != undefined) {
       try {
-        const response = await axios.get(`http://3.37.130.241:8080/${navItem.href}`);
+        const response = await axios.get(process.env.BAKCEND_HOST + '/${navItem.href}');
         setImageURL(response.data.photo);
       } catch (error) {
         console.error('Error fetching projects: ', error);
       }
     } else {
       try {
-        const response = await axios.get(`http://3.37.130.241:8080/api/images/hackathon/1`);
+        const response = await axios.get(process.env.BAKCEND_HOST + '/api/images/hackathon/1');
         setImageURL(response.data.photo);
       } catch (error) {
         console.error('Error fetching projects: ', error);
@@ -123,7 +123,7 @@ function Home() {
 
   const getPeriodInfo = async () => {
     try {
-      const apiPath = `http://3.37.130.241:8080/api/recruitment/schedule/`;
+      const apiPath = process.env.BAKCEND_HOST + `/api/recruitment/schedule/`;
       const response = await fetch(apiPath);
       const data = await response.json();
       setPeriodInfo(data);

@@ -115,7 +115,7 @@ function SliderDetail() {
       // http get 요청하기
       const fetchData = async () => {
         try {
-          const response = await fetch(`http://34.64.82.240:8080/${yearParam}/${item}`);
+          const response = await fetch(process.env.BAKCEND_HOST + `/${yearParam}/${item}`);
           if (!response.ok) {
             throw new Error(`서버 응답 실패, HTTP 상태코드: ${response.status}`);
           }

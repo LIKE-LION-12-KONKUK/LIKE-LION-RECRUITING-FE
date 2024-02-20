@@ -31,7 +31,7 @@ function Apply() {
 
   const handleChange = (e) => {
     const { id, value } = e.target;
-    
+
     if (id === 'quest1' && value.length <= 500) {
       setQuest1Length(value.length);
       setFormData({ ...formData, [id]: value });
@@ -51,10 +51,10 @@ function Apply() {
       setFormData({ ...formData, [id]: value });
     }
   };
-  
+
   const checkPeriod = async () => {
     try {
-      const apiPath = `http://3.37.130.241:8080/api/date/check/`;
+      const apiPath = process.env.BAKCEND_HOST + `/api/date/check/`;
       const response = await fetch(apiPath); // await를 사용하여 비동기적으로 데이터를 받음
       const data = await response.json();
 
@@ -74,7 +74,7 @@ function Apply() {
 
   const submitData = () => {
     // HTTP POST 요청 보내기
-    fetch('http://3.37.130.241:8080/api/upload/user-info/', {
+    fetch(process.env.BAKCEND_HOST + '/api/upload/user-info/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ function Apply() {
 
   const getPeriodInfo = async () => {
     try {
-      const apiPath = `http://3.37.130.241:8080/api/recruitment/schedule/`;
+      const apiPath = process.env.BAKCEND_HOST + `/api/recruitment/schedule/`;
       const response = await fetch(apiPath);
       const data = await response.json();
       setPeriodInfo(data);
@@ -138,7 +138,7 @@ function Apply() {
   }, [periodInfo]);
 
   return (
-      <>
+    <>
       <div className="App-back">
         <div className='main'>
           <p className="main-title">건국대학교 멋쟁이사자처럼 12기 지원서</p>
@@ -248,15 +248,15 @@ function Apply() {
         </div>
         {showPopup && (
           <>
-          <div className="modal-background">
+            <div className="modal-background">
               {/* 모달 백그라운드 */}
             </div>
-          <div className="popup">
-            <img className="popup-close" alt="closeBtn" src="/image/buttonClose.png" onClick={closePopup}/>
-            <div className='popup-t'>!</div>
-            <p className='popup-text'>제출 후 수정이 불가능합니다.<br></br>제출하시겠습니까?</p>
-            <button className='popup-submit' onClick={submitData}>[제출하기]</button>
-          </div>
+            <div className="popup">
+              <img className="popup-close" alt="closeBtn" src="/image/buttonClose.png" onClick={closePopup} />
+              <div className='popup-t'>!</div>
+              <p className='popup-text'>제출 후 수정이 불가능합니다.<br></br>제출하시겠습니까?</p>
+              <button className='popup-submit' onClick={submitData}>[제출하기]</button>
+            </div>
           </>
         )}
         {successPopup && (
@@ -277,7 +277,7 @@ function Apply() {
         )}
       </div>
       <Footer />
-      </>
+    </>
   );
 }
 

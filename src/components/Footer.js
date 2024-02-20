@@ -5,13 +5,13 @@ function Footer() {
 
   return (
     <>
-    <div className="footer-bg">
+      <div className="footer-bg">
         <div className='footer-container'>
-            <img className="fab fa-typo1" alt="logo" src="/image/likelion_logo.png" />
-            건국대학교 멋쟁이사자처럼
+          <img className="fab fa-typo1" alt="logo" src="/image/likelion_logo.png" />
+          건국대학교 멋쟁이사자처럼
         </div>
-        <p className='info-text'>ⓒ2023. LIKELION KONKUK 11th. All rights reserved.</p>
-    </div>
+        <p className='info-text'>ⓒ2024. LIKELION KONKUK 12th. All rights reserved.</p>
+      </div>
     </>
   );
 }
