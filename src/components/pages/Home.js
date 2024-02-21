@@ -42,7 +42,7 @@ function Home() {
   const fetchSectionImage = async (navItem) => {
     if (navItem.href != undefined) {
       try {
-        const response = await axios.get(process.env.REACT_APP_JAVA_BACKEND_HOST + '/${navItem.href}');
+        const response = await axios.get(process.env.REACT_APP_JAVA_BACKEND_HOST + `/${navItem.href}`);
         setImageURL(response.data.photo);
       } catch (error) {
         console.error('Error fetching projects: ', error);

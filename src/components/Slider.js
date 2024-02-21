@@ -135,7 +135,7 @@ export default class Slider extends Component {
   setSlidesFromData = async (year) => {
     try {
       const numericYear = this.extractNumericYear(year);
-      const jsonUrl = process.env.REACT_APP_PYTHON_BAKCEND_HOST + `/${numericYear}`;
+      const jsonUrl = process.env.REACT_APP_PYTHON_BACKEND_HOST + `/${numericYear}`;
       const response = await fetch(jsonUrl);
 
       if (!response.ok) {
