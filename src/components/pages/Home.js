@@ -185,7 +185,7 @@ function Home() {
               </div>
 
               {/* 두번째 homeimgBox_상단바_아래  */}
-              <div class='homeimgBox_2_white_down'>
+              <div className='homeimgBox_2_white_down'>
                 {/* 회색 가로 박스 */}
                 <div className="graySidebar">
                   <div class='Sidebar' style={{ marginTop: '20px' }}>
