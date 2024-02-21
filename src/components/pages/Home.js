@@ -188,13 +188,13 @@ function Home() {
               <div className='homeimgBox_2_white_down'>
                 {/* 회색 가로 박스 */}
                 <div className="graySidebar">
-                  <div class='Sidebar' style={{ marginTop: '20px' }}>
+                  <div className='Sidebar' style={{ marginTop: '20px' }}>
                     <div className='home-overlay-subcontent_title' >
                       < div className='subcontent_title_1'>
                         LIKELION </div>
                       {/* 데이터 처리 */}
                       <div div className='subcontent_likelion'>
-                        <div class="subcontent_likelion_title" >
+                        <div className="subcontent_likelion_title" >
                           <div style={{ marginTop: '7px' }}>건국대학교</div>
                           <div style={{ marginTop: '7px' }}>멋쟁이사자처럼</div>
                         </div>
@@ -247,7 +247,7 @@ function Home() {
           <div className='projectimgBox' >
 
             {/* 상단 */}
-            <div class="projectimgBox_top">
+            <div className="projectimgBox_top">
               <div className='projectimgBox_top_text'>
                 건국대학교 멋쟁이사자처럼</div>
             </div>
@@ -320,7 +320,7 @@ function Home() {
               <div className="trackDetailZone_yz_guideLine">
                 {/* 노란색 섹션 - 1 */}
                 <div className='yz'>
-                  <div class="yz_container1">
+                  <div className="yz_container1">
                     <div className="yz_top">  </div>
                     <div className="yz_down">
                       <div className="yz_text">
@@ -328,12 +328,12 @@ function Home() {
                     </div>
                   </div>
                   <div className="overlay-div-1">
-                    <div class="svg1">
+                    <div className="svg1">
                       <svg xmlns="http://www.w3.org/2000/svg" width="869" height="672" viewBox="0 0 869 672" fill="none">
                         <path d="M67 672L0 0H285L869 286L67 672Z" fill="#D9D9D9" />
                       </svg>
                     </div>
-                    <div class="content-container-1">
+                    <div className="content-container-1">
                       <div className="content_part">
                         <div className="content_part_title">
                           기획/디자인?</div> <br />
@@ -354,7 +354,7 @@ function Home() {
 
                 {/* 노란색 섹션 - 2*/}
                 <div className='yz'>
-                  <div class="yz_container2">
+                  <div className="yz_container2">
                     <div className="yz_top">  </div>
                     <div className="yz_down">
                       <div className="yz_text">
@@ -362,12 +362,12 @@ function Home() {
                     </div>
                   </div>
                   <div className="overlay-div-2">
-                    <div class="svg2">
+                    <div className="svg2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="802" height="264" viewBox="0 0 802 264" fill="none">
                         <path d="M0 264L258 0H543L802 264H0Z" fill="#D9D9D9" />
                       </svg>
                     </div>
-                    <div class="content-container-2">
+                    <div className="content-container-2">
                       <div className="content_part">
                         <div className="content_part_title">
                           프론트엔드?</div> <br />
@@ -388,20 +388,20 @@ function Home() {
 
                 {/* 노란색 섹션 - 3*/}
                 <div className='yz'>
-                  <div class="yz_container3">
+                  <div className="yz_container3">
                     <div className="yz_top">  </div>
                     <div className="yz_down">
                       <div className="yz_text">
                         백엔드</div>
                     </div>
                   </div>
-                  <div class="overlay-div-3">
-                    <div class="svg3">
+                  <div className="overlay-div-3">
+                    <div className="svg3">
                       <svg xmlns="http://www.w3.org/2000/svg" width="898" height="650" viewBox="0 0 898 650" fill="none">
                         <path d="M0 264L613 0H898L802 650L0 264Z" fill="#D9D9D9" />
                       </svg>
                     </div>
-                    <div class="content-container-3">
+                    <div className="content-container-3">
                       <div className="content_part">
                         <div className="content_part_title">
                           백엔드?</div> <br />
