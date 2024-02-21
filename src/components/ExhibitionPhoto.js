@@ -7,16 +7,16 @@ function ExhibitionPhoto({ activeButton }) {
 
   switch (activeButton) {
     case '11기':
-      imageUrl = 'https://drive.google.com/uc?export=view&id=19-KUmaynk6AyEMeuDT3DJHEneYgROFfu';
-      // imageUrl = '/exhibitionphoto/11th.png'
+      // imageUrl = 'https://drive.google.com/uc?export=view&id=19-KUmaynk6AyEMeuDT3DJHEneYgROFfu';
+      imageUrl = `${process.env.PUBLIC_URL}/exhibitionphoto/11th.png`
       break;
     case '12기':
-      imageUrl = 'https://drive.google.com/uc?export=view&id=1ygpIzYWvgAeooUZ8ahC59KImUNd-q5qX';
-      // imageUrl = '/exhibitionphoto/12th.png'
+      // imageUrl = 'https://drive.google.com/uc?export=view&id=1ygpIzYWvgAeooUZ8ahC59KImUNd-q5qX';
+      imageUrl = `${process.env.PUBLIC_URL}/exhibitionphoto/12th.png`
       break;
     case '13기':
-      imageUrl = 'https://drive.google.com/uc?export=view&id=1LuwKoGH8mh3l62nIZYeNqt_rz38kvV2t';
-      // imageUrl = '/exhibitionphoto/13th.png'
+      // imageUrl = 'https://drive.google.com/uc?export=view&id=1LuwKoGH8mh3l62nIZYeNqt_rz38kvV2t';
+      imageUrl = `${process.env.PUBLIC_URL}/exhibitionphoto/13th.png`
       break;
     default:
       return null;
