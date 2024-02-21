@@ -15,7 +15,7 @@ function About() {
   //HTTP GET 요청보내기
   const testGetJava = async () => {
     try {
-      const apiPath = process.env.BAKCEND_HOST + `/api/images/backend/1`;
+      const apiPath = process.env.REACT_APP_JAVA_BACKEND_HOST + `/api/images/backend/1`;
       const response = await fetch(apiPath); // await를 사용하여 비동기적으로 데이터를 받음
       const data = await response.json(); // JSON 데이터로 변환
 

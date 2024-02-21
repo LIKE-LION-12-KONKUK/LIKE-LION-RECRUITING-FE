@@ -21,7 +21,7 @@ function Navbar() {
 
   const checkPeriod = async () => {
     try {
-      const apiPath = process.env.BAKCEND_HOST + `/api/date/check/`;
+      const apiPath = process.env.REACT_APP_JAVA_BACKEND_HOST + `/api/date/check/`;
       const response = await fetch(apiPath); // await를 사용하여 비동기적으로 데이터를 받음
       const data = await response.json();
       setPeriodCheck(data.periodCheck);

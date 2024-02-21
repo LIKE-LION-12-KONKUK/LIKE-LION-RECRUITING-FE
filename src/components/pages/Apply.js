@@ -54,7 +54,7 @@ function Apply() {
 
   const checkPeriod = async () => {
     try {
-      const apiPath = process.env.BAKCEND_HOST + `/api/date/check/`;
+      const apiPath = process.env.REACT_APP_JAVA_BACKEND_HOST + `/api/date/check/`;
       const response = await fetch(apiPath); // await를 사용하여 비동기적으로 데이터를 받음
       const data = await response.json();
 
@@ -74,7 +74,7 @@ function Apply() {
 
   const submitData = () => {
     // HTTP POST 요청 보내기
-    fetch(process.env.BAKCEND_HOST + '/api/upload/user-info/', {
+    fetch(process.env.REACT_APP_JAVA_BACKEND_HOST + '/api/upload/user-info/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ function Apply() {
 
   const getPeriodInfo = async () => {
     try {
-      const apiPath = process.env.BAKCEND_HOST + `/api/recruitment/schedule/`;
+      const apiPath = process.env.REACT_APP_JAVA_BACKEND_HOST + `/api/recruitment/schedule/`;
       const response = await fetch(apiPath);
       const data = await response.json();
       setPeriodInfo(data);
