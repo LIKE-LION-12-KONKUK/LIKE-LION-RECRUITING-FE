@@ -463,13 +463,13 @@ function Home() {
                       서류 지원 : 2024.02.23(금) ~ 2024.03.01(금) 23:59</div>
                       {/* 서류 지원 : {formatDate(periodInfo.applicationStartDate)} ~ {formatDate2(periodInfo.applicationEndDate)}</div> */}
                     <div className="br-gap2" style={{ marginBottom: '63px' }}>
-                      합격 발표 : 2024.03.03(일)</div>
+                      서류 합격 발표 : 2024.03.03(일)</div>
                       {/* 1차 합격 발표: {formatDate(periodInfo.applicationResultAnnouncementDate)}</div> */}
                     <div className='br-gap2' style={{ marginBottom: '63px' }}>
                       면접 : 2024.03.05(화)</div>
                       {/* 2차 면접: {formatDate(periodInfo.interviewStartDate)} ~ {formatDate(periodInfo.interviewEndDate)}</div> */}
                       <div className='br-gap2' style={{ marginBottom: '63px' }}>
-                      최종 발표 : 2024.03.06(수)</div>
+                      최종 합격 발표 : 2024.03.06(수)</div>
                       {/* 최종 발표: {formatDate(periodInfo.finalResultAnnouncementDate)}</div> */}
                     <div className="br-gap2">
                       OT : 2024.03.08(금)</div>
