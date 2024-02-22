@@ -59,9 +59,12 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/apply' className={`nav-links ${activeLink === '/apply' ? 'active' : ''}`}>
+                <Link to='https://forms.gle/BTwBNDsWo1eUNi3q8' className={`nav-links ${activeLink === '/apply' ? 'active' : ''}`}>
                   APPLY
                 </Link>
+                {/* <Link to='/apply' className={`nav-links ${activeLink === '/apply' ? 'active' : ''}`}>
+                  APPLY
+                </Link> */}
               </li>
               <li className='nav-item'>
                 <Link to='/exhibition' className={`nav-links ${activeLink === '/exhibition' ? 'active' : ''}`}>

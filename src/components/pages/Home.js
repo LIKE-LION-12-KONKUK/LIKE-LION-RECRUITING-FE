@@ -453,23 +453,29 @@ function Home() {
               </div>
 
               {/*select-schedule*/}
-              {periodInfo && (
+              {/* {periodInfo && ( */}
                 <div className='select-schedule'>
                   {/* 선발일정 */}
                   <div className='title2' style={{ marginBottom: '37px' }}>
                     선발 일정</div>
                   <div className='content2'>
                     <div className="br-gap2" style={{ marginBottom: '63px' }}>
-                      서류 지원 : {formatDate(periodInfo.applicationStartDate)} ~ {formatDate2(periodInfo.applicationEndDate)}</div>
+                      서류 지원 : 2024.02.23(금) ~ 2024.03.01(금) 23:59</div>
+                      {/* 서류 지원 : {formatDate(periodInfo.applicationStartDate)} ~ {formatDate2(periodInfo.applicationEndDate)}</div> */}
                     <div className="br-gap2" style={{ marginBottom: '63px' }}>
-                      1차 합격 발표: {formatDate(periodInfo.applicationResultAnnouncementDate)}</div>
+                      합격 발표 : 2024.03.03(일)</div>
+                      {/* 1차 합격 발표: {formatDate(periodInfo.applicationResultAnnouncementDate)}</div> */}
                     <div className='br-gap2' style={{ marginBottom: '63px' }}>
-                      2차 면접: {formatDate(periodInfo.interviewStartDate)} ~ {formatDate(periodInfo.interviewEndDate)}</div>
+                      면접 : 2024.03.05(화)</div>
+                      {/* 2차 면접: {formatDate(periodInfo.interviewStartDate)} ~ {formatDate(periodInfo.interviewEndDate)}</div> */}
+                      <div className='br-gap2' style={{ marginBottom: '63px' }}>
+                      최종 발표 : 2024.03.06(수)</div>
+                      {/* 최종 발표: {formatDate(periodInfo.finalResultAnnouncementDate)}</div> */}
                     <div className="br-gap2">
-                      최종 발표: {formatDate(periodInfo.finalResultAnnouncementDate)}</div>
+                      OT : 2024.03.08(금)</div>
                   </div>
                 </div>
-              )}
+              {/* )} */}
 
               {/*activity-schedule*/}
               <div className='activity-schedule'>
@@ -478,15 +484,17 @@ function Home() {
                   활동 일정</div>
                 <div className='content3'>
                   <div className="br-gap3" style={{ marginBottom: '63px' }}>
-                    활동 기간: 24.00월 - 24.00월</div>
+                    활동 기간 : 2024.03.06 ~ 2025.02.28</div>
                   <div className="br-gap3" style={{ marginBottom: '63px' }}>
-                    학교 OT : 24.00.00(월) 00시</div>
+                    5월 : 중앙 아이디어톤</div>
                   <div className='br-gap3' style={{ marginBottom: '63px' }}>
-                    전체 OT : 24.00.00(수) 00시</div>
+                    8월 : 중앙 해커톤</div>
                   <div className="br-gap3" style={{ marginBottom: '63px' }}>
-                    중앙 아이디어톤 : 24년 6월 중</div>
+                    10월 : 미국 멋사 팀원들과 함께 해커톤 진행</div>
+                  <div className="br-gap3" style={{ marginBottom: '63px' }}>
+                    12월 : 데모데이(스타트업 기획 및 소개)</div>
                   <div className="br-gap3" style={{ marginBottom: '200px' }}>
-                    중앙 해커톤 : 24년 7월 - 24년 8월</div>
+                    25년 2월 : 실리콘 밸리 기업 탐방(우수활동자 한정)</div>
                 </div>
               </div>
             </div>
